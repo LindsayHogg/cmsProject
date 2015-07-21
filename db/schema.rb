@@ -15,10 +15,11 @@ ActiveRecord::Schema.define(version: 20150721174149) do
 
   create_table "profiles", force: :cascade do |t|
     t.string   "name"
-    t.string   "ddescription"
+    t.string   "description"
     t.string   "country"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
