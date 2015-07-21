@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'profile/new'
+
+  get 'users/new'
+
   root 'welcome#index'
 
   get '/secret' => 'welcome#secret'
